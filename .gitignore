@@ -1,5 +1,15 @@
-# Object file
-*.o
+*.js 
+*.d.ts 
+.DS_store 
+node_modules 
+target 
+test-reports 
+!jest.config.js 
 
-# Ada Library Information
-*.ali
+# CDK asset staging directory 
+.cdk.staging 
+cdk.out 
+
+*.csv 
+./bundle 
+.byebug_history
