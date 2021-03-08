@@ -7,14 +7,14 @@ import {ASG} from '../lib/asg-stack';
 import {ALB} from '../lib/alb-stack';
 import { S3 } from '../lib/s3-stack';
 import { ParentStack } from '../lib/parent-stack';
-import {vpcStackConf, sgStackConf, asgStackConf, albStackConf, s3StackConf } from '../lib/configuration/stacks-conf';
+import {vpcStackConf, sgStackConf, asgStackConf, albStackConf, s3StackConf, baseStackConf } from '../lib/configuration/stacks-conf';
 
 
 const app = new cdk.App();
 
 new ParentStack(app, 'ParentStack', {
     env: { 
-        region: vpcStackConf.region 
+        region: baseStackConf.region 
     }
 });
 
